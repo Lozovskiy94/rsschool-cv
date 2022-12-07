@@ -64,7 +64,7 @@ function towerBuilder(nFloors) {
   }
   //delete spaces in last child
   let lastOne = arr[arr.length-1].trim()
-  arr[arr.length- 1] = lastOne
+  arr[arr.length-1 ] = lastOne
   return arr
 }
 ```
