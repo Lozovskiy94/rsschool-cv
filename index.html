@@ -132,7 +132,7 @@ let space = ' '<br>
                         
 //prepare arr length<br>
                         
-for (i = 0; i &lt nFloors-1; i++) { <br>
+for (i = 0; i &lt; nFloors-1; i++) { <br>
     if (a % 2 == 1)  {<br>
     a = a + 2    <br>
  }<br>
@@ -140,7 +140,7 @@ for (i = 0; i &lt nFloors-1; i++) { <br>
                          
 //prepare arr<br>
                       
-for (i = 0,j = nFloors - 1; i &lt nFloors; i++,j--) {<br>
+for (i = 0,j = nFloors - 1; i &lt; nFloors; i++,j--) {<br>
     let start = new RegExp (`^\\*{${j}}`, `g`)<br>
     let end = new RegExp (`\\*{${j}}$`, `g`)<br>
     arr.push(star.repeat(a).replace(end, space.repeat(j)).replace(start,space.repeat(j)))<br>
