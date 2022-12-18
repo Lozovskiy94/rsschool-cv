@@ -9,31 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <title>cv</title>
 </head>
 
 <body>
     <div class="main-wrapper">
         <header class="header">
             <div class="container">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>                       
-                        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-                        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>                       
-                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>                       
-                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-                    </ul>
-                </nav>
+
+                    <nav class="nav">
+                        
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#contacts" class="nav-link"><span>Contacts</span></a></li>
+                                <li class="nav-item"><a href="#summary" class="nav-link"><span>Summary</span></a></li>
+                                <li class="nav-item"><a href="#skills" class="nav-link"><span>Skills</span></a></li>                       
+                                <li class="nav-item"><a href="#courses" class="nav-link"><span>Courses</span></a></li>
+                                <li class="nav-item"><a href="#languages" class="nav-link"><span>Languages</span></a></li>                       
+                                <li class="nav-item"><a href="#education" class="nav-link"><span>Education</span></a></li>                       
+                                <li class="nav-item"><a href="#code" class="nav-link"><span>Code</span></a></li>
+                                <li class="nav-item"><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+                            </ul>
+                        
+                    </nav>
+
                 <div class="wrapper">
                     <div class="introduced">
                         <h1 class="section-title">Bogdan Lozovskiy</h1>
                         <p>JUNIOR FRONT-END DEVELOPER</p>
 
                     </div>
-                    <img src="photo.png" class="photo">
+                    <img src="assets/img/photo.png" class="photo" alt="photo">
                 </div>
 
             </div>
@@ -77,6 +82,10 @@
                 <section class="section" id="education">
                     <h2 class="section-title">Education</h2>
                     <p>State University of Economics and Technology, Master`s Degree field of study "Mechanical Engineering"</p>
+                </section>
+                <section class="section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <p><a href="https://Lozovskiy94.github.io/rsschool-cv/">My CV</a></p>
                 </section>
                 <section class="section" id="code">
                     <h2 class="section-title">Code</h2>
@@ -129,14 +138,14 @@ for (i = 0; i < nFloors-1; i++) {
  }
 }
                          
-//prepare arr
-                        
+//prepare arr</pre>
+<p>                      
 for (i = 0,j = nFloors - 1; i < nFloors; i++,j--) {
     let start = new RegExp (`^\\*{${j}}`, `g`)
     let end = new RegExp (`\\*{${j}}$`, `g`)
     arr.push(star.repeat(a).replace(end, space.repeat(j)).replace(start,space.repeat(j)))
-}
-
+}</p> 
+<pre>
 //delete spaces in last child
 
 let lastOne = arr[arr.length-1].trim()
