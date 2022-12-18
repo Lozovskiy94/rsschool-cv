@@ -122,41 +122,37 @@
                           
 ]
                     </pre>
-                    <code><pre>function towerBuilder(nFloors) {
-// build here
+                    <code>function towerBuilder(nFloors) {<br>
+// build here<br>
 
-let arr = []
-let star = '*'
-let a = 1
-let space = ' '
+let arr = []<br>
+let star = '*'<br>
+let a = 1<br>
+let space = ' '<br>
                         
-//prepare arr length
+//prepare arr length<br>
                         
-for (i = 0; i < nFloors-1; i++) { 
-    if (a % 2 == 1)  {
-    a = a + 2    
- }
-}
+for (i = 0; i < nFloors-1; i++) { <br>
+    if (a % 2 == 1)  {<br>
+    a = a + 2    <br>
+ }<br>
+}<br>
                          
-//prepare arr</pre>
-<p>                      
-for (i = 0,j = nFloors - 1; i < nFloors; i++,j--) {
-    let start = new RegExp (`^\\*{${j}}`, `g`)
-    let end = new RegExp (`\\*{${j}}$`, `g`)
-    arr.push(star.repeat(a).replace(end, space.repeat(j)).replace(start,space.repeat(j)))
-}</p> 
-<pre>
-//delete spaces in last child
+//prepare arr<br>
+                      
+for (i = 0,j = nFloors - 1; i < nFloors; i++,j--) {<br>
+    let start = new RegExp (`^\\*{${j}}`, `g`)<br>
+    let end = new RegExp (`\\*{${j}}$`, `g`)<br>
+    arr.push(star.repeat(a).replace(end, space.repeat(j)).replace(start,space.repeat(j)))<br>
+}
 
-let lastOne = arr[arr.length-1].trim()
-arr[arr.length-1 ] = lastOne
-return arr
-}</pre></code>
+//delete spaces in last child<br>
+
+let lastOne = arr[arr.length-1].trim()<br>
+arr[arr.length-1 ] = lastOne<br>
+return arr<br>
+}</code>
                 </section>
-
-                </section>
-                
-
             </div>
         </main>
     </div>
